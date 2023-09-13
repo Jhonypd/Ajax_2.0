@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c2c3c3;
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.container form {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45rem;
+    background: #2a4466;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+.container form input{
+    height: 1.5rem;
+    border-radius: 6px;
+    padding: 0 1rem;
+    margin: 1rem 0 0;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.container form h3{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 .5rem;
+}
+
+.container form .address{
+    display: flex;
+    width: 100%;
+    gap: .8rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+}
+.container form .address .input-group label{
+    margin: 0 .5rem;
+}
+.container form .address .input-group input{
+    padding: 0 .3rem;
+}
+.container form input::placeholder{
+    color: #2a4466;
+}
+.container form .address input[type="text"]{
+    background: #c2c3c3;
+}
+.address .input-group .search-cep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    margin: 1rem 0 0;
+}
+.address .input-group .search-cep #search{
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background: #198522;
+    color: #cbccda;
+    cursor: pointer;
+}
+.address .input-group .search-cep input{
+    margin: 0;
+}
+.address .input-group .search-cep #search:hover{
+    background: #459e4a;
+    color: #e9eaf1;
+}
+.container form .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    color: #313258;
+    cursor: pointer;
+    padding: .5rem;
+    font-size: 1rem;
+    margin: 1.5rem auto 0;
+    font-weight: 700;
+}
+
+
+.msg-erros{
+    width: 100%;
+    text-align: center;
+    color: #f00;
+    font-size: .9rem;
+}
+#invalid-nome, #invalid-email, #invalid-cpf, #invalid-cep, #invalid-numero, #invalid-uf{
+    width: 100%;
+    text-align: center;
+    color: #f00;
+    font-size: .9rem;
+    margin: .2rem 0 0;
+}
+.container .vazio{
+   border: 1.5px solid rgb(196, 65, 65) !important;
+   background-color: rgb(207, 114, 114) !important;
+}

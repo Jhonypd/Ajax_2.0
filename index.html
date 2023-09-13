@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ajax 2.0</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form action="" id="cadastro">
+                <h3>Cadastro</h3>
+                <div class="msg-erros">
+                    <p id="mensagem"></p>
+                </div>
+                <div class="input-group">
+                    <input class="not-null" type="text" placeholder="Nome e sobrenome" name="nome" id="nome">
+                    <p id="invalid-nome"></p>
+                </div>
+                <div class="input-group">
+                    <input class="not-null" type="text" placeholder="E-mail" name="email" id="email">
+                    <p id="invalid-email"></p>
+                </div>
+                <div class="input-group">
+                    <input class="not-null" type="text" placeholder="CPF" name="cpf" id="cpf">
+                    <p id="invalid-cpf"></p>
+                </div>
+
+                <div class="address">
+                    <div class="input-group">
+                        <div class="search-cep">
+                            <label for="cep">CEP</label>
+                            <input type="text" name="cep" id="cep" size="8">
+                            <input type="button" id="search" value="Buscar cep">
+                        </div>
+                        <p id="invalid-cep"></p>
+                    </div>
+                    <div class="input-group">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua" size="40">
+                        <p id="invalid-rua"></p>
+                    </div>
+                    <div class="input-group">
+                        <label for="numero">Nº</label>
+                        <input type="text" name="numero" id="numero" size="5">
+                        <p id="invalid-numero"></p>
+                    </div>
+                    <div class="input-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" size="22">
+                        <p id="invalid-bairro"></p>
+                    </div>
+                    <div class="input-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" size="22">
+                        <p id="invalid-cidade"></p>
+                    </div>
+                    <div class="input-group">
+                        <label for="uf">UF</label>
+                        <input type="text" name="uf" id="uf" size="2">
+                        <p id="invalid-uf"></p>
+                    </div>
+                </div>
+                <button class="btn">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <script src="./js/form.js"></script> -->
+    <script src="./js/validacao.js"></script>
+    <script src="./js/fill.js"></script>
+</body>
+
+</html>
