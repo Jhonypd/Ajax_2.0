@@ -102,6 +102,7 @@ function validarCampos(campos) {
         mensagem.innerHTML = '';
         form.submit()
     }
+    
 }
 
 function validarNumero(numero) {

@@ -1,5 +1,6 @@
 const mensagemCep = document.querySelector('#invalid-cep');
-const search = document.querySelector('#search');
+//const search = document.querySelector('#search');
+
 const cep = document.getElementById('cep');
 const rua = document.getElementById('rua'); 
 const bairro = document.getElementById('bairro');
@@ -23,7 +24,8 @@ function updateAdress(data) {
     }
 }
 
-search.addEventListener('click', function () {
+cep.addEventListener('blur', function (event) {
+    event.preventDefault()
     const isCEP = validaCep(cep.value); 
     if (!isCEP) { 
         mensagemCep.innerHTML = `CEP inválido`;
@@ -35,4 +37,6 @@ search.addEventListener('click', function () {
         document.body.appendChild(script);
     }
 });
+
+
 
